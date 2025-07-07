@@ -1,12 +1,12 @@
 "use client"
 
-import Image from 'next/image'
 import React, { useState } from 'react'
 import { IoLocationSharp } from "react-icons/io5";
 import { FiPhoneCall } from 'react-icons/fi'
 import { TbMailDown } from 'react-icons/tb'
 import { FaDiscord, FaFacebookSquare, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 
 
@@ -64,15 +64,15 @@ const ContactUS = () => {
                 </div>
             )}
             <main className='w-[100%] h-auto max-w-screen-2xl mx-auto'>
-                
+
                 <h3 className="font-bold md:text-2xl text-xl text-center py-4">Lets <span className="inline-block mb-2 -rotate-6 bg-purple-200 md:bg-purple-300 rounded-2xl px-5 animate-pulse ">Get in</span> Touch</h3>
 
-                <section className='lg:px-20 md:px-11 px-3 md:gap-14 flex flex-col md:flex-row justify-between items-center py-2 lg:py-3'>
+                <section className='lg:px-20 md:px-11 px-3 md:gap-10 lg:gap-14 gap-5 flex flex-col md:flex-row justify-between items-center py-2 lg:py-3'>
 
                     {/* left-side */}
                     <div className='lg:w-[50%] md:w-[65%]' data-aos="fade-right">
                         <h2 className='py-2 text-base font-medium text-zinc-600'>Get in touch with <span className='border-b-2 font-semibold border-purple-400'>Doblier</span> Inc.</h2>
-                        <p className='py-2 text-gray-600 text-[15px]'>We would love to hear from you! Whether you have a question, suggestion, or just want to say hello, we are always happy to connect with our community.</p>
+                        <p className='py-2 text-gray-700 text-[15px]'>We would love to hear from you! Whether you have a question, suggestion, or just want to say hello, we are always happy to connect with our community.</p>
                         <form onSubmit={handleSubmit}>
                             <label className='block my-2 mt-5 text-gray-600 md:text-base text-sm' htmlFor="name">Full Name</label>
                             <input
@@ -82,7 +82,7 @@ const ContactUS = () => {
                                 value={formData.name}
                                 onChange={handleChange}
                                 placeholder="Enter your name"
-                                className="w-full p-3 py-2 border border-gray-300 rounded search-bar"
+                                className="w-full p-3 py-2 border border-zinc-400 rounded-lg"
                                 required
                             />
                             <label className='block my-2 md:text-base text-sm text-gray-600' htmlFor="email">Email</label>
@@ -93,7 +93,7 @@ const ContactUS = () => {
                                 value={formData.email}
                                 onChange={handleChange}
                                 placeholder="Enter your email"
-                                className="w-full p-3 py-2 border border-gray-300 rounded"
+                                className="w-full p-3 py-2 border border-zinc-400 rounded-lg "
                                 required
                             />
                             <label className='block my-2 md:text-base text-sm text-gray-600' htmlFor="category">Category</label>
@@ -101,7 +101,7 @@ const ContactUS = () => {
                                 name="category"
                                 value={formData.category}
                                 onChange={handleChange}
-                                className="w-full p-3 text-gray-500 py-2 border border-gray-300 rounded"
+                                className="w-full p-2 text-gray-500 py-2 border border-zinc-400 rounded-lg "
                                 required
                             >
                                 <option value="General Questions">General Questions</option>
@@ -116,7 +116,7 @@ const ContactUS = () => {
                                 name="message"
                                 value={formData.message}
                                 onChange={handleChange}
-                                className="w-full p-3 md:text-base text-sm py-2 border border-gray-300 rounded"
+                                className="w-full p-3 md:text-base text-sm py-2 border border-zinc-400 rounded-lg "
                                 placeholder='Type your message here....'
                                 rows={5}
                                 required
@@ -131,7 +131,13 @@ const ContactUS = () => {
                     </div>
                     {/* right-side */}
                     <div className='mt-10 md:mt-0' data-aos="fade-up">
-                        <Image className='lg:w-[550px] lg:h-[400px] w-[460px] h-[280px] ' width={400} height={400} src="/contact-us.png" alt="" />
+
+                        <DotLottieReact
+                        className='h-full  lg:w-[110%] mx-auto'
+                            src="https://lottie.host/318c9cd0-d5da-4ff2-a0dc-6433646e1877/0OJsQZBLiD.lottie"
+                            loop
+                            autoplay
+                        />
 
                         <div className='flex flex-row gap-7 mt-10 '>
                             <FiPhoneCall className='text-xl text-gray-700 ' />

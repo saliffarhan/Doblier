@@ -35,28 +35,28 @@ async function About() {
                     {/* Item 1 */}
                     <AccordionItem value="item-1" data-aos="fade-down">
                         <AccordionTrigger className="cursor-pointer">{item.question1}</AccordionTrigger>
-                        <AccordionContent className="border-b-2 border-gray-300  md:border-gray-400 py-2  font-sans font-normal md:text-[16px] md:leading-7 leading-6 text-gray-800  px-4">
+                        <AccordionContent className="font-sans font-normal md:text-[16px] md:leading-7 leading-6 text-gray-800 py-2 md:px-1 px-2">
                             {item.answer1}
                         </AccordionContent>
                     </AccordionItem>
                     {/* item 2 */}
                     <AccordionItem className="mt-5" value="item-2" data-aos="fade-down">
                         <AccordionTrigger className="cursor-pointer">{item.question2}</AccordionTrigger>
-                        <AccordionContent className="border-b-2 border-gray-300  md:border-gray-400 py-2 font-sans font-normal md:text-[16px] md:leading-7 leading-6 text-gray-800  px-4">
+                        <AccordionContent className="py-2 font-sans font-normal md:text-[16px] md:leading-7 leading-6 text-gray-800  md:px-1 px-2">
                             {item.answer2}
                         </AccordionContent>
                     </AccordionItem>
                     {/* item3 */}
                     <AccordionItem className="mt-5" value="item-3" data-aos="fade-down">
                         <AccordionTrigger className="cursor-pointer">{item.question3} </AccordionTrigger>
-                        <AccordionContent className="border-b-2 border-gray-300  md:border-gray-400 py-2 font-sans font-normal md:text-[16px] md:leading-7 leading-6 text-gray-800  px-4">
+                        <AccordionContent className="py-2 font-sans font-normal md:text-[16px] md:leading-7 leading-6 text-gray-800  md:px-1 px-2">
                             {item.answer3}
                         </AccordionContent>
                     </AccordionItem>
                     {/* item 4 */}
                     <AccordionItem className="mt-5" value="item-4" data-aos="fade-down">
                         <AccordionTrigger className="cursor-pointer">{item.question4}  </AccordionTrigger>
-                        <AccordionContent className="border-b-2 border-gray-300  md:border-gray-400 py-2 font-sans font-normal md:text-[16px] md:leading-7 leading-6 text-gray-800  px-4">
+                        <AccordionContent className="py-2 font-sans font-normal md:text-[16px] md:leading-7 leading-6 text-gray-800  md:px-1 px-2">
                             {item.answer4}
                         </AccordionContent>
                     </AccordionItem>
@@ -66,7 +66,7 @@ async function About() {
                         item.addQuestions.map((faq: About_FAQ, index: number) => (
                             <AccordionItem key={index} className="mt-5" data-aos="fade-down" value={`additional-item-${index}`}>
                                 <AccordionTrigger className="cursor-pointer">{faq.question}</AccordionTrigger>
-                                <AccordionContent className="border-b-2 border-gray-300  md:border-gray-400 py-2 font-sans font-normal md:text-[16px] md:leading-7 leading-6 text-gray-800  px-4">
+                                <AccordionContent className="py-2 font-sans font-normal md:text-[16px] md:leading-7 leading-6 text-gray-800  md:px-1 px-2">
                                     {faq.answer}
                                 </AccordionContent>
                             </AccordionItem>

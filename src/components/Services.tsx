@@ -32,21 +32,21 @@ async function Services() {
                     {/* Item 1 */}
                     <AccordionItem value="item-1" data-aos="fade-down">
                         <AccordionTrigger className='cursor-pointer'>{items.question1}</AccordionTrigger>
-                        <AccordionContent className="border-b-2 border-gray-300  md:border-gray-400 py-2  font-sans font-normal md:text-[16px] md:leading-7 leading-6 text-gray-800  px-4">
+                        <AccordionContent className="font-sans font-normal md:text-[16px] md:leading-7 leading-6 text-gray-800 py-2 md:px-1 px-2">
                             {items.answer1}
                         </AccordionContent>
                     </AccordionItem>
                     {/* item 2 */}
                     <AccordionItem className="mt-5" value="item-2" data-aos="fade-down">
                         <AccordionTrigger className='cursor-pointer'>{items.question2} </AccordionTrigger>
-                        <AccordionContent className="border-b-2 border-gray-300  md:border-gray-400 py-2 font-sans font-normal md:text-[16px] md:leading-7 leading-6 text-gray-800  px-4">
+                        <AccordionContent className="font-sans font-normal md:text-[16px] md:leading-7 leading-6 text-gray-800 py-2 md:px-1 px-2">
                             {items.answer2}
                         </AccordionContent>
                     </AccordionItem>
                     {/* item3 */}
                     <AccordionItem className="mt-5" value="item-3" data-aos="fade-down">
                         <AccordionTrigger className='cursor-pointer'>{items.question3}</AccordionTrigger>
-                        <AccordionContent className="border-b-2 border-gray-300  md:border-gray-400  py-2  font-sans font-normal md:text-[16px] md:leading-7 leading-6 text-gray-800  px-4">
+                        <AccordionContent className="font-sans font-normal md:text-[16px] md:leading-7 leading-6 text-gray-800  py-2 md:px-1 px-2">
                             {items.answer3}
                         </AccordionContent>
                     </AccordionItem>
@@ -56,7 +56,7 @@ async function Services() {
                         items.AddQuestions.map((item: Servies_FAQ, index: number) => (
                             <AccordionItem key={index} className="mt-5" data-aos="fade-down" value={`additional-item-${index}`}>
                                 <AccordionTrigger className='cursor-pointer'>{item.question}</AccordionTrigger>
-                                <AccordionContent className="border-b-2 border-gray-300  md:border-gray-400  py-2  font-sans font-normal md:text-[16px] md:leading-7 leading-6 text-gray-800  px-4">
+                                <AccordionContent className="font-sans font-normal md:text-[16px] md:leading-7 leading-6 text-gray-800 py-2 md:px-1 px-2">
                                     {item.answer}
                                 </AccordionContent>
                             </AccordionItem>
